@@ -66,7 +66,7 @@ The SHAP analysis identifies features that were most influential in the model’
   <em>Figure 3. SHAP scatter plot for temp_diff (left), tool_wear (middle), torque_per_speed (right) showing how variations in feature values affect their contribution and direction of influence on model predictions.</em>
 </p>
 
-## Limitation
+## Limitations
 - The Random Forest model is trained on static sensor data, which limits its ability to capture time-dependent degradation trends or evolving machine conditions.
 - The SHAP analysis interprets model behavior but does not establish causal relationships in real-world machine dynamics.
 - Validation with domain experts and testing on live production data are necessary to confirm model reliability before any operational use.
