@@ -5,7 +5,7 @@ This project develops a predictive maintenance model to identify early signs of 
 The objective of this project is to develop a predictive maintenance model that can identify early warning signs of machine failure using sensor data. The goal is to enable proactive maintenance decisions that reduce downtime and operational costs. The project also includes interpretability analysis (SHAP analysis) to understand feature importance.
 
 ## Data Source
-Dataset: "AI4I 2020 Predictive Maintenance Dataset" — licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) by UCI Machine Learning Repository. <br>
+Dataset: "AI4I 2020 Predictive Maintenance Dataset" - licensed under Creative Commons Attribution 4.0 International (CC BY 4.0) by UCI Machine Learning Repository. <br>
 Used solely for educational and non-commercial purposes. <br>
 Dataset available at: https://archive.ics.uci.edu/ml/datasets/ai4i+2020+predictive+maintenance+dataset
 
@@ -48,14 +48,14 @@ The SHAP analysis identifies features that were most influential in the model’
 ## Visualizations
 <p align="left">
   <img src="visuals/PR_Comparison.png" alt="PR plot" width="400"><br>
-  <em>Figure 1: Precision-Recall curve of logistic regression model and Random Forest classifier.</em>
+  <em>Figure 1. Precision-Recall curve of logistic regression model and Random Forest classifier.</em>
 </p>
 <br>
 
 <p align="left">
   <img src="visuals/shap_bar.png" alt="SHAP bar" width="50%">
   <img src="visuals/shap_beeswarm.png" alt="SHAP beeswarm" width="49%">
-  <em>Figure 2: Left: Left: SHAP bar plot illustrating the relative importance of each feature in the model’s predictions. Right: SHAP beeswarm plot showing how feature values influence the likelihood of machine failure.</em>
+  <em>Figure 2. Left: SHAP bar plot illustrating the relative importance of each feature in the model’s predictions. Right: SHAP beeswarm plot showing how feature values influence the likelihood of machine failure.</em>
 </p>
 <br>
 
@@ -63,11 +63,10 @@ The SHAP analysis identifies features that were most influential in the model’
   <img src="visuals/shap_scatter_temp_diff.png" alt="SHAP temp_diff" width="33%">
   <img src="visuals/shap_scatter_tool_wear.png" alt="SHAP tool_wear" width="33%">
   <img src="visuals/shap_scatter_torque_per_speed.png" alt="SHAP torque_per_speed" width="33%">
-  <em>Figure 3: SHAP scatter plot for temp_diff (left), tool_wear (middle), torque_per_speed (right) showing how variations in feature values affect their contribution and direction of influence on model predictions.</em>
+  <em>Figure 3. SHAP scatter plot for temp_diff (left), tool_wear (middle), torque_per_speed (right) showing how variations in feature values affect their contribution and direction of influence on model predictions.</em>
 </p>
 
 ## Limitation
 - The Random Forest model is trained on static sensor data, which limits its ability to capture time-dependent degradation trends or evolving machine conditions.
 - The SHAP analysis interprets model behavior but does not establish causal relationships in real-world machine dynamics.
 - Validation with domain experts and testing on live production data are necessary to confirm model reliability before any operational use.
-
